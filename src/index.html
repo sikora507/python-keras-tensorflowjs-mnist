@@ -61,6 +61,7 @@
 
             var isDrawing;
             el.onmousedown = function (e) {
+                rect = el.getBoundingClientRect();
                 isDrawing = true;
                 var point = getPoint(e, rect);
                 ctx.moveTo(point.x, point.y);
